@@ -1,12 +1,14 @@
 import { defineConfig } from 'vitepress'
 import { setSidebar } from './utils/autoSetSidebar.mts'
 
+const BASE_PATH = '/docs-site/'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base:BASE_PATH,
   lang: 'zh-CN',
   title: "谢同学的文档",
   description: "A VitePress Site",
-  head: [["link", {rel: "icon", href: "/logo.svg"}]],
+  head: [["link", {rel: "icon", href: `${BASE_PATH}/logo.svg`}]],
   // 国际化i18n
   // locales: {
   //   root: {
