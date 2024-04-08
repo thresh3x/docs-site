@@ -18,13 +18,14 @@ hero:
       link: /api-examples
 
 features:
-  - title: 
-      image:
-        src: /tip1.svg
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: <img src="./tip1.svg" width="50" height="50"></img>
+    title: 初衷
+    details: 构建自己的知识库，就算忘了，也能回过头来查看。
+  - icon: <img src="./tip2.svg" width="50" height="50"></img>
+    title: 心态
+    details: 保持一颗积极乐观的心态，才能更好的学习。
+  - icon: <img src="./tip3.svg" width="50" height="50"></img>
+    title: 小建议
+    details: 有时候原理会比呈现出来的结果更容易理解。
 ---
 

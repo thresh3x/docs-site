@@ -23,13 +23,13 @@ export default defineConfig({
     outlineTitle: '目录',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      {
-        text: '前端',
-        items: [
-          { text: 'JavaScript', link: '/front-end/JavaScript' },
-          { text: 'Vue', link: '/front-end/Vue' },
-        ]
-      },
+      // {
+      //   text: '前端',
+      //   items: [
+      //     { text: 'JavaScript', link: '/front-end/JavaScript' },
+      //     { text: 'Vue', link: '/front-end/Vue' },
+      //   ]
+      // },
       {
         text: 'Examples',
         items: [
@@ -37,14 +37,16 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       },
-      { text: 'JavaScript', link: '/front-end/JavaScript/' },
-      { text: 'Vue', link: '/front-end/Vue' },
+      // { text: 'JavaScript', link: '/front-end/JavaScript/' },
+      // { text: 'Vue', link: '/front-end/Vue/' },
+      { text: '面试笔记', link: '/recording/CSS3新特性' },
     ],
 
     // 利用自定义的函数，根据文件夹格式生成sidebar
     sidebar: {
       "/front-end/JavaScript": setSidebar("/front-end/JavaScript"),
       "/front-end/Vue": setSidebar("/front-end/Vue"),
+      "/recording": setSidebar("/recording"),
       "Examples": [
         { text: 'Markdown Examples', link: '/markdown-examples' },
         { text: 'Runtime API Examples', link: '/api-examples' }
@@ -67,7 +69,7 @@ export default defineConfig({
 
     footer: {
       message: 'A VitePress Site',
-      copyright: 'Copyright © 2024-present Xie Shijie'
+      // copyright: 'Copyright © 2024-present Xie Shijie'
     },
     // 上次更新显示（目前没看到作用）
     lastUpdated: {
